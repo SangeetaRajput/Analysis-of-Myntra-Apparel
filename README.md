@@ -7,6 +7,7 @@ Dataset Link:https://drive.google.com/file/d/1CDaWFvkccjdUw1E_gipTKOfMqiHNhNQL/v
 
 # Data Cleaning and Preparation
 Steps Performed:
+
 &#8226; Removed duplicate records using the Remove Duplicates feature.
 
 &#8226; Standardized the "DiscountOffer" column to ensure consistent formatting.
