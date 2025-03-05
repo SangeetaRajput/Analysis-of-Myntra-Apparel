@@ -1,34 +1,46 @@
 # Analysis-of-Myntra-Apparel
 
-Problem Statement: You are working at Myntra, a leading online fashion retailer. The management has asked you to analyze a dataset of various apparel items to gain insights into pricing, discounts, ratings, and available sizes.
+# Project Overview
+This project analyzes apparel data from Myntra, focusing on data cleaning, preparation, analysis, and lookup operations using Microsoft Excel. The project covers important aspects such as handling duplicates, filling missing values, categorizing discounts, and retrieving product information using powerful Excel functions like VLOOKUP, XLOOKUP, INDEX & MATCH.
 
-Project Questions
+Dataset Link: 
+https://drive.google.com/file/d/1CDaWFvkccjdUw1E_gipTKOfMqiHNhNQL/view
 
-A. Data Cleaning and Preparation
+# Data Cleaning and Preparation
+Duplicate Removal: Identified and eliminated duplicate records to maintain data integrity.
+Discount Formatting: Standardized the values in the DiscountOffer column for consistency.
+Missing Values Treatment:
+Filled missing DiscountPrice using the average discount price per category.
+Replaced empty SizeOption values with "Not Available" to avoid gaps in analysis.Data Analysis Objectives
 
-1.Check for duplicate values in your dataset and remove them.
+# Data Analysis Objectives
+To generate meaningful insights, the following analytical tasks were performed:
 
-2.Standardize the "DiscountOffer" column to a single format, ensuring all values are uniform.
+Average Price Analysis: Calculated the average original price for products with ratings above 4 using AVERAGEIF.
+Discount Analysis: Counted products offering more than 50% discount using COUNTIF.
+Size Analysis: Determined the number of products available in size M.
+Discount Classification: Added a new column to classify products as High Discount (above 50%) or Low Discount (50% or below) using the IF function.
 
-3.Identify rows where both "DiscountPrice" and "DiscountOffer" are null and fill the "DiscountPrice" with the average discount price    of the respective category.
+# Lookup & Retrieval Tasks
+Excel’s lookup functions were applied to quickly fetch product details based on Product IDs:
 
-4.Replace all null values in the "SizeOption" column with the text "Not Available."
+Product Details Retrieval: Used XLOOKUP to fetch brand, price, and rating for Product ID 11226634.
+Discount Price Lookup: Retrieved DiscountPrice for Product ID 6744434 using a combination of INDEX and MATCH.
+Nested Lookup: Implemented a nested XLOOKUP to dynamically pull column details based on product ID.
 
-B. Data Analysis
+# Excel Techniques & Formulas Used
 
-1.Calculate the overall average original price for products with ratings greater than 4.
+&#8226; Data Cleaning:Remove Duplicates, Text to Columns, IFERROR
+Analysis:AVERAGEIF, COUNTIF, IF
+Lookup Operations:VLOOKUP, XLOOKUP, INDEX, MATCH
+Conditional Formatting : Conditional Formatting for visual insights
 
-2.Count the number of products with a discount offer greater than 50% OFF.
+# Conclusion
+This project highlights the power of Excel for quick and effective data analysis in the e-commerce domain. By leveraging its versatile functions, we were able to clean messy data, uncover insights, and retrieve product details efficiently — all crucial steps for data-driven decision-making in a competitive online retail environment.
 
-3.Count the number of products available in size "M."
 
-4.Create a new column to label the products as "High Discount" if the discount offer is greater than 50% OFF, otherwise label them as "Low Discount."
 
-C. Data Retrieval and Lookup
 
-1.Use VLOOKUP/XLOOKUP to find the product brand, price, and rating of the product with Product_id "11226634".
 
-2.Find the "DiscountPrice" for the product with the Product ID "6744434" using the INDEX and MATCH functions.
 
-3.Utilize nested xlookup to find any column’s detail of a product with it’s product id.
  
