@@ -7,6 +7,8 @@ Dataset Link:
 https://drive.google.com/file/d/1CDaWFvkccjdUw1E_gipTKOfMqiHNhNQL/view
 
 # Data Cleaning and Preparation
+Several preprocessing steps were performed to ensure the dataset’s reliability and usability:
+
 &#8226; Duplicate Removal: Identified and eliminated duplicate records to maintain data integrity.
 
 &#8226; Discount Formatting: Standardized the values in the DiscountOffer column for consistency.
@@ -37,11 +39,11 @@ Excel’s lookup functions were applied to quickly fetch product details based o
 
 # Excel Techniques & Formulas Used
 
-&#8226; Data Cleaning:Remove Duplicates, Text to Columns, IFERROR
+&#8226; Data Cleaning : Remove Duplicates, Text to Columns, IFERROR
 
-&#8226; Analysis:AVERAGEIF, COUNTIF, IF
+&#8226; Analysis : AVERAGEIF, COUNTIF, IF
 
-&#8226; Lookup Operations:VLOOKUP, XLOOKUP, INDEX, MATCH
+&#8226; Lookup Operations : VLOOKUP, XLOOKUP, INDEX, MATCH
 
 &#8226; Conditional Formatting : Conditional Formatting for visual insights
 
